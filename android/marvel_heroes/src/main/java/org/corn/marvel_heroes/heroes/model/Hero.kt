@@ -1,4 +1,4 @@
-package org.atf.marvel_heroes.heroes.model
+package org.corn.marvel_heroes.heroes.model
 
 import androidx.annotation.ColorInt
 import androidx.annotation.DrawableRes

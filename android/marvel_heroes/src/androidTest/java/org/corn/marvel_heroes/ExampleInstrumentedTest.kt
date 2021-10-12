@@ -1,4 +1,4 @@
-package org.atf.marvel_heroes
+package org.corn.marvel_heroes
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("org.atf.marvel_heroes", appContext.packageName)
+        assertEquals("org.corn.marvel_heroes", appContext.packageName)
     }
 }

@@ -1,4 +1,4 @@
-package org.atf.marvel_heroes
+package org.corn.marvel_heroes
 
 import org.junit.Test
 
