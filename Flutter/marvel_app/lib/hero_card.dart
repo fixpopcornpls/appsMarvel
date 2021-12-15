@@ -9,32 +9,30 @@ class HeroCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return
-      Container(
-          padding: const EdgeInsets.only(left: 10, bottom: 20),
-          margin: const EdgeInsets.all(30),
-          width: 270,
-          height: 500,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-                image: Image.asset(
-                  heroes.path,
-                ).image,
-                fit: BoxFit.cover),
+    return Container(
+        padding: const EdgeInsets.only(left: 10, bottom: 20),
+        margin: const EdgeInsets.all(30),
+        width: 270,
+        height: 500,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+              image: Image.asset(
+                heroes.path,
+              ).image,
+              fit: BoxFit.cover),
+        ),
+        child: Align(
+          alignment: Alignment.bottomLeft,
+          child: Text(
+            heroes.name,
+            overflow: TextOverflow.ellipsis,
+            softWrap: true,
+            style: const TextStyle(
+                color: Colors.white,
+                fontSize: 30,
+                fontWeight: FontWeight.normal),
+            textAlign: TextAlign.start,
           ),
-          child: Align(
-            alignment: Alignment.bottomLeft,
-            child: Text(
-              heroes.name,
-              overflow: TextOverflow.ellipsis,
-              softWrap: true,
-              style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 30,
-                  fontWeight: FontWeight.normal),
-              textAlign: TextAlign.start,
-            ),
-          )
-          );
+        ));
   }
 }
